@@ -1,0 +1,46 @@
+.page__container {
+	padding-top: 60px;
+}
+
+th,
+td {
+	text-align: center;
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+.question {
+	position: relative;
+	padding: 60px 0;
+	text-align: center;
+}
+
+.question .alert {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.question p {
+	margin: 0;
+}
+
+.questionValue {
+	font-size: 5rem;
+}
+
+.question h2 {
+	font-size: 1.4rem;
+}

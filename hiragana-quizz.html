@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Kana ~ Mots ~ Jeu</title>
+
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/app.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="/">Kana ~ Mots ~ Jeu</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hiragana</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="hiragana-quizz">Quizz</a>
+							<a class="dropdown-item" href="hiragana-table">Tableau</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle disabled" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Katakana</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown02">
+							<a class="dropdown-item" href="katakana-quizz">Quizz</a>
+							<a class="dropdown-item" href="katakana-table">Tableau</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="page__container">
+			<div class="container">
+				<h1>Hiragana</h1>
+
+				<hr>
+
+				<h2 class="inline">Sélectionnez le nombre de lignes</h2>
+
+				<select class="custom-select" id="lines">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">Tout</option>
+				</select>
+
+				<div class="question">
+					<h2>Cochez l'équivalent de ce caractère :</h2>
+					<div class="alert alert-success" role="alert">
+					  <p>Bonne réponse !</p>
+					</div>
+					<div class="alert alert-danger" role="alert">
+					  <p>Mauvaise réponse...</p>
+					</div>
+					<p class="questionValue"></p>
+				</div>
+
+				<form action="#">
+					<div class="flex">
+						<div class="form-check">
+							<label for="answer1">
+								<input id="answer1" checked class="answer" value="" name="answer" type="radio" />
+								<span class="answer1"></span>
+							</label>
+						</div>
+
+						<div class="form-check">
+							<label for="answer2">
+								<input id="answer2" class="answer" value="" name="answer" type="radio" />
+								<span class="answer2"></span>
+							</label>
+						</div>
+
+						<div class="form-check">
+							<label for="answer3">
+								<input id="answer3" class="answer" value="" name="answer" type="radio" />
+								<span class="answer3"></span>
+							</label>
+						</div>
+
+						<div class="form-check">
+							<label for="answer4">
+								<input id="answer4" class="answer" value="" name="answer" type="radio" />
+								<span class="answer4"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button id="submit" class="btn btn-primary" type="button">Valider</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/app.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
