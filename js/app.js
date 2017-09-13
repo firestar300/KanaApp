@@ -110,8 +110,14 @@
         window.location = window.location.origin + window.location.pathname + '?l=' + linesNumber;
       });
 
-      for (var i = 0; i < linesNumber; i++) {
-        questions.push(datas.hiragana[i]);
+      if(document.querySelector('body').dataset.quizz === 'hiragana') {
+        for (var i = 0; i < linesNumber; i++) {
+          questions.push(datas.hiragana[i]);
+        }
+      } else {
+        for (var i = 0; i < linesNumber; i++) {
+          questions.push(datas.katakana[i]);
+        }
       }
 
       var answer = generateQuestion(questions, linesNumber);

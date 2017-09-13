@@ -12,7 +12,7 @@
 	    <link href="css/app.css" rel="stylesheet">
 	</head>
 
-	<body data-quizz="hiragana">
+	<body data-quizz="katakana">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 			<a class="navbar-brand" href="/">Kana ~ Mots ~ Jeu</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +21,14 @@
 
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item active dropdown">
+					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hiragana</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown01">
 							<a class="dropdown-item" href="hiragana-quizz.html">Quizz</a>
 							<a class="dropdown-item" href="hiragana-table.html">Tableau</a>
 						</div>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item active dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Katakana</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown02">
 							<a class="dropdown-item" href="katakana-quizz.html">Quizz</a>
@@ -67,10 +64,10 @@
 				<div class="question">
 					<h2>Cochez l'équivalent de ce caractère :</h2>
 					<div class="alert alert-success" role="alert">
-					  <p>Bonne réponse !</p>
+					  	<p>Bonne réponse !</p>
 					</div>
 					<div class="alert alert-danger" role="alert">
-					  <p>Mauvaise réponse...</p>
+					  	<p>Mauvaise réponse...</p>
 					</div>
 					<p class="questionValue"></p>
 				</div>
